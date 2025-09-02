@@ -1,5 +1,36 @@
+body{
+    background-color: burlywood;
+}
+
 h1{
-    text-align:left;
+    text-align:center;
     color: #000000;
-    margin: 50px;
+    margin: 30px 0;
+    font-size: 40px;
+}
+
+
+
+.imagenes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    justify-items: center; 
+    padding: 20px;
+}
+
+.item{
+    text-align: center;
+}
+
+.titulopostre{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.item img{
+    width: 200px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
