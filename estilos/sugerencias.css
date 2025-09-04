@@ -2,46 +2,81 @@ body{
     background-color: burlywood;
 }
 
-h1{
-    text-align:center;
-    color: #000000;
+.h1{
+    text-align: center;
     margin: 30px 0;
     font-size: 40px;
 }
 
-.sugerencias{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-    justify-items: center; 
-    padding: 20px;
+.formulario{
+    width: 200px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 8px;
 }
 
-.item{
-    text-align: center;
-}
-
-.titulosug{
-    font-size: 20px;
+.formulario label{
+    display: block;
+    margin-top: 20px;
     font-weight: bold;
-    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
 }
 
-.item img{
-    width: 200px;
-    border-radius: 12px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+.formulario input, .formulario textarea{
+    width: 100%;
+    padding: 5px;
+    margin-top: 2px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-.imagen:hover+.titulosug{
-    color: rgb(43, 55, 226);
+.formulario button{
+    margin-top: 10px;
+    background-color: rgb(172, 136, 136);
+    color: rgb(238, 238, 238);
+    padding: 5px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
 }
 
-.imagen{
-    width: 200px;
-    transition: transform 0.6s ease;
+.formulario button:hover{
+    background-color: rgb(91, 74, 107);
 }
 
-.imagen:hover{
-    transform: scale(1.2) rotate3d(1, 1, 0, 20deg);
+.img{
+    position: fixed;
+    bottom: 100px;
+    right: 400px;
+    width: 150px;
+    border-radius: 10px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+.img:hover~.img{
+    opacity: 100;
+}
+
+button{
+    background-color: rgb(70, 29, 8);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 17px;
+    font-family:cursive;
 }
