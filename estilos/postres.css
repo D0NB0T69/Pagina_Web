@@ -92,6 +92,6 @@ button{
     font-family:cursive;
 }
 
-.item > .titulopostre{
+.item > .titulopostre{ /* Selector hijo, selecciona todos los titulos, dentro del item */
     color: rgb(0, 48, 107);
 }
