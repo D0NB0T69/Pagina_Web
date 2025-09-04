@@ -4,7 +4,7 @@
 .titulo {
     text-align: center;
     background-color: #FFB74D; /* naranja suave */
-    color: white;
+    color: white; /*color letra*/
     border-style: none;
     border-radius: 12px;
     padding: 25px;
@@ -24,8 +24,6 @@
     width: 47.9%;
     border-radius: 12px;
     text-transform: uppercase;
-    color: inherit;
-
 }
 
 .itemsBarra {
@@ -48,8 +46,7 @@
 .botonBarra {
     display: flex;
     background-color: transparent;
-    border: none;
-    border-radius: 8px;
+    border: none;   
     font-weight: 600;
     text-transform: uppercase;
     font-size: medium;
@@ -67,7 +64,6 @@ a {
     background-size: 790px ;
     background-repeat: no-repeat;
     border:2px  black solid;
-    border-color: black ;
     border-radius: 12px;
     background-color: #ffffff;
     background-image: url(../Img_Restaurante/tavern-8024234_1280.jpg);
@@ -78,9 +74,6 @@ a {
     margin: auto;
     width: 750px;
     height: 250px;
-    background-size: 790px ;
-    background-repeat: no-repeat;
-    border:2px transparent;
+    border: transparent;
     text-align: center;
-
 }
