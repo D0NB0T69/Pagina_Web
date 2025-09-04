@@ -93,3 +93,8 @@ button{
 .item > .titulocaldo{ 
     color: rgba(146, 111, 123, 0.292);
 }
+.nombrePlato::before{
+    font-size: 25px;
+    font-weight: bold;
+    content: "→ ";
+}

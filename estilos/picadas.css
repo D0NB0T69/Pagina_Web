@@ -67,4 +67,9 @@ a{
     font-size: 25px;
     font-weight: bold;
 }
+.nombrePlato::before{
+    font-size: 25px;
+    font-weight: bold;
+    content: "→ ";
+}
 
