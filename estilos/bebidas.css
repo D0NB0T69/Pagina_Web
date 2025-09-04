@@ -3,8 +3,93 @@ body {
 }
 
 h1{
-    text-align:center;
-    color: #000000;
-    margin: 30px 0;
+    
+    border: 3px solid #020202; /* borde alrededor */
+    padding: 20px;             /* espacio interno */
+    margin: 40px auto;         /* espacio externo */
+    width: fit-content;        /* se ajusta al tamaño del contenido */
+    border-radius: 15px;       /* esquinas redondeadas */
+    background-color: burlywood; /* color de fondo */
+    text-align: center;
     font-size: 40px;
+}
+.imagen{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 200px;
+    justify-items: center; 
+    padding: 20px;
+}
+
+.item{
+    text-align: center;
+  
+}
+
+.titulobebida{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.item img{
+    width: 300px;
+    height: 300px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 8px rgba(3, 3, 3, 0.3);
+}
+
+.imagenes:hover+.titulobebida{
+    color: rgb(0, 0, 0);
+}
+
+.imagenes{
+    width: 200px;
+    transition: transform 0.6s ease;
+}
+
+.imagenes:hover{
+    transform: scale(1.2) rotate3d(1, 1, 0, 20deg);
+}
+
+.chocolate{
+    position: sticky;
+    bottom: 100px;
+    right: 20px;
+    width: 150px;
+    border-radius: 10px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    80% {
+        transform: translateY(-15px);
+    }
+}
+
+.chocolate:hover~.chocolate{
+    opacity: 100;
+}
+
+button{
+    background-color: rgb(210, 88, 27);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 17px;
+    font-family:cursive;
+}
+.precio{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(52, 57, 52);
+    font-family:cursive;
+}
+.item > .titulobebida{ 
+    color: rgba(146, 111, 123, 0.292);
 }

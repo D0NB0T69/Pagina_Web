@@ -46,6 +46,23 @@ h1{
     transform: scale(1.2) rotate3d(1, 1, 0, 20deg);
 }
 
+.h3{
+    text-align: center;
+    font-size: 15px;
+    color: rgb(46, 46, 46);
+}
+
+.precio{
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(10, 14, 10);
+    font-family:cursive;
+}
+
+.item > .titulopostre{ /* Selector hijo, selecciona todos los titulos, dentro del item */
+    color: rgb(0, 48, 107);
+}
+
 .cupcake{
     position: sticky;
     bottom: 100px;
@@ -77,21 +94,4 @@ button{
     cursor: pointer;
     font-size: 17px;
     font-family:cursive;
-}
-
-.h3{
-    text-align: center;
-    font-size: 15px;
-    color: rgb(46, 46, 46);
-}
-
-.precio{
-    font-size: 15px;
-    font-weight: bold;
-    color: rgb(10, 14, 10);
-    font-family:cursive;
-}
-
-.item > .titulopostre{ /* Selector hijo, selecciona todos los titulos, dentro del item */
-    color: rgb(0, 48, 107);
 }

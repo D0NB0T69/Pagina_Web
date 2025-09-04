@@ -2,10 +2,8 @@ body{
     background-color: burlywood;
 }
 
-h1{
-    color: #020202;
-    margin: 40px 0;
-    font-size: 60px;
+h1{ 
+    font-size: 40px;
     border: 3px solid #020202; 
     padding: 20px;             
     margin: 40px auto;       
